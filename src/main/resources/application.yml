@@ -1,21 +1,21 @@
-# ?? ?? ??
+# 서버 포트 설정
 server:
   port: 8092
 
-# database ?? ??
+# database 연동 설정
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/db_codingrecipe?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
-    username: user_codingrecipe
-    password: 1234
+    url: jdbc:mysql://localhost:3306/springBoard?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: 0807
   thymeleaf:
     cache: false
 
-  # spring data jpa ??
+  # spring data jpa 설정
   jpa:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     open-in-view: false
     show-sql: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
